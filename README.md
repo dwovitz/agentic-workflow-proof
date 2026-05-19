@@ -23,8 +23,8 @@ David Ovitz is building and dogfooding a private AI-assisted software factory th
 | System | Visibility | Role |
 |---|---:|---|
 | `dwovitz/memory-mcp` | Public | Local-first memory MCP server and public technical credibility surface |
-| `dwovitz/ai-os` | Private | Personal operating layer and backlog/workflow coordination surface |
-| `dwovitz/dark-factory` | Private | Private agentic software factory engine |
+| Private operating-layer repository | Private | Personal operating layer and backlog/workflow coordination surface |
+| Private workflow-engine repository | Private | Private agentic software factory engine |
 | `dwovitz/agentic-workflow-proof` | Public | Sanitized public proof ledger |
 
 ## Repository map
