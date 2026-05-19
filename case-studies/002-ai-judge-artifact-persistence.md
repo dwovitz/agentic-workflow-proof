@@ -12,7 +12,7 @@ If the judge result is not persisted durably, later review, routing, memory, and
 
 ## Private source system
 
-- Private repository: `dwovitz/dark-factory`
+- Private source: workflow-engine repository
 - Evidence type: private issue, private pull request, private tests, private run artifacts
 - Public exposure: sanitized summary only
 
