@@ -6,8 +6,8 @@ This repository exists to prove capability without publishing the private engine
 
 The following remain private unless explicitly reviewed and sanitized:
 
-- `dark-factory` source code
-- `ai-os` source code
+- private workflow-engine source code
+- private operating-layer source code
 - exact private prompts
 - exact model-routing heuristics
 - local filesystem paths
