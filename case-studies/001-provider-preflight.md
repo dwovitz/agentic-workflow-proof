@@ -12,7 +12,7 @@ A safer workflow checks required providers before beginning expensive work and f
 
 ## Private source system
 
-- Private repository: `dwovitz/dark-factory`
+- Private source: workflow-engine repository
 - Evidence type: private issue, private pull request, private tests, private run artifacts
 - Public exposure: sanitized summary only
 
