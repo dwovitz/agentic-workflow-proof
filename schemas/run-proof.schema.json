@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dwovitz/agentic-workflow-proof/schemas/run-proof.schema.json",
+  "title": "RunProof",
+  "type": "object",
+  "required": ["id", "claim_ids", "summary", "validation", "human_involvement", "limitations"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable run proof identifier."
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "source_visibility": {
+      "type": "string",
+      "enum": ["public", "private", "mixed"]
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "result"],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string",
+            "enum": ["passed", "failed", "skipped", "unknown"]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "human_involvement": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "public_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "private_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
