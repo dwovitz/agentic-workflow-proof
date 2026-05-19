@@ -18,12 +18,12 @@ This file maps claims to evidence without exposing private implementation detail
 | ID | Claim IDs | Evidence | Type | Public status | Notes |
 |---|---|---|---|---:|---|
 | E001 | C006 | `dwovitz/memory-mcp` README | Public repository | Public | Describes local-first memory MCP server with PostgreSQL, pgvector, hybrid retrieval, context packets, MCP tools, and Docker persistence. |
-| E002 | C001, C002, C003, C005 | Private `dark-factory` provider/harness preflight issue and merged PR | Private issue / private PR | Private | Demonstrates provider availability classification and fail-closed startup behavior. Sanitized case study planned. |
-| E003 | C003 | Private `dark-factory` AI-judge artifact persistence issue and merged PR | Private issue / private PR | Private | Demonstrates durable capture of AI-judge outcomes before publishing decisions. Sanitized case study planned. |
-| E004 | C004 | Private `dark-factory` token-efficient context assembly issue and merged PR | Private issue / private PR | Private | Demonstrates context reduction and handoff discipline. Sanitized case study planned. |
-| E005 | C004 | Private `dark-factory` structured evidence packet issue | Private issue | Private | Planned work to replace full raw diffs with compact reviewer/judge evidence packets. |
-| E006 | C004 | Private `dark-factory` inefficiency report issue | Private issue | Private | Planned work to report token/cost/process inefficiencies after each run. |
-| E007 | C001, C004 | Private `ai-os` Claude/Codex/local handoff protocol issue | Private issue | Private | Defines handoff artifacts, role split, epic boundary behavior, and compact context bundles. |
+| E002 | C001, C002, C003, C005 | Private workflow-engine provider/harness preflight issue and merged PR | Private issue / private PR | Private | Demonstrates provider availability classification and fail-closed startup behavior. Sanitized case study published. |
+| E003 | C003 | Private workflow-engine AI-judge artifact persistence issue and merged PR | Private issue / private PR | Private | Demonstrates durable capture of AI-judge outcomes before publishing decisions. Sanitized case study published. |
+| E004 | C004 | Private workflow-engine token-efficient context assembly issue and merged PR | Private issue / private PR | Private | Demonstrates context reduction and handoff discipline. Sanitized case study planned. |
+| E005 | C004 | Private workflow-engine structured evidence packet issue | Private issue | Private | Planned work to replace full raw diffs with compact reviewer/judge evidence packets. |
+| E006 | C004 | Private workflow-engine inefficiency report issue | Private issue | Private | Planned work to report token/cost/process inefficiencies after each run. |
+| E007 | C001, C004 | Private operating-layer Claude/Codex/local handoff protocol issue | Private issue | Private | Defines handoff artifacts, role split, epic boundary behavior, and compact context bundles. |
 
 ## Publication rules
 
@@ -39,8 +39,8 @@ Before moving evidence from private to public, sanitize:
 
 ## Priority evidence gaps
 
-1. Publish first sanitized case study for provider availability preflight.
-2. Add a proof schema and one example `run-proof` JSON artifact.
-3. Add redacted screenshots of PR summaries or validation output.
-4. Add a clear public architecture diagram that exposes the control flow but not implementation.
-5. Add a recurring proof update process after major private milestones.
+1. Publish a sanitized run-proof JSON example.
+2. Add redacted screenshots of PR summaries or validation output.
+3. Add a clear public architecture diagram that exposes the control flow but not implementation.
+4. Add a recurring proof update process after major private milestones.
+5. Publish a third sanitized case study for token-efficient context assembly or structured evidence packets.
