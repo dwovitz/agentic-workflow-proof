@@ -1,0 +1,42 @@
+{
+  "id": "run-proof-example-001",
+  "claim_ids": [
+    "C001",
+    "C002",
+    "C003",
+    "C005"
+  ],
+  "summary": "Private workflow run demonstrated provider availability preflight before execution.",
+  "source_visibility": "private",
+  "validation": [
+    {
+      "name": "build",
+      "result": "passed",
+      "notes": "Private build validation reported as passing."
+    },
+    {
+      "name": "tests",
+      "result": "passed",
+      "notes": "Private tests covered provider availability states and role-specific unavailable-provider behavior."
+    }
+  ],
+  "human_involvement": [
+    "Human reviewed final private pull request.",
+    "Human merged final private pull request."
+  ],
+  "limitations": [
+    "Public artifact does not expose source code.",
+    "This example does not prove full autonomy.",
+    "This example does not prove commercial outcome value."
+  ],
+  "public_artifacts": [
+    "case-studies/001-provider-preflight.md"
+  ],
+  "private_artifacts": [
+    "Private issue",
+    "Private pull request",
+    "Private test output",
+    "Private run artifact"
+  ],
+  "last_reviewed": "2026-05-19"
+}
