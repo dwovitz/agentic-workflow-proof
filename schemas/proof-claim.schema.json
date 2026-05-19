@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dwovitz/agentic-workflow-proof/schemas/proof-claim.schema.json",
+  "title": "ProofClaim",
+  "type": "object",
+  "required": ["id", "claim", "status", "evidence"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable claim identifier, such as C001."
+    },
+    "claim": {
+      "type": "string",
+      "description": "Human-readable claim."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "demonstrated-public",
+        "demonstrated-private",
+        "planned",
+        "unproven",
+        "retired"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Evidence item IDs that support this claim."
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "public_safe": {
+      "type": "boolean",
+      "description": "Whether the claim can be published without leaking private implementation details."
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
